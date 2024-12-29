@@ -25,7 +25,7 @@ const PersonalWebsite = () => {
   }, [isDarkMode]);
 
   return (
-    <div className={`min-h-screen bg-white ${isDarkMode ? 'bg-black' : 'dark:bg-gray-900'} text-gray-900 dark:text-gray-100 relative`}>
+    <div className={`min-h-screen bg-white ${isDarkMode ? 'bg-black' : 'bg-white'} text-gray-900 dark:text-gray-100 relative`}>
       {/* Dark Mode Toggle */}
       <Button
         variant="outline"
