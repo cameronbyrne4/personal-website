@@ -6,15 +6,15 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Mail, Github, Sun, Moon, Linkedin } from "lucide-react";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import portrait from "@/assets/portrait.jpg";
 import parkworth from "@/assets/parkworth.jpeg";
 import burlington from "@/assets/burlington.jpeg";
 import sbseal from "@/assets/sbseal.jpeg";
-import projects from './projects'; // Adjust the path as necessary
+import projects from "./projects"; // Adjust the path as necessary
 
 const PersonalWebsite = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [dropdowns, setDropdowns] = useState<{ [key: string]: boolean }>({});
 
   useEffect(() => {
     if (isDarkMode) {
@@ -23,10 +23,6 @@ const PersonalWebsite = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [isDarkMode]);
-
-  const toggleDropdown = (key: string) => {
-    setDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
-  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 relative">
@@ -49,7 +45,7 @@ const PersonalWebsite = () => {
         <section className="mb-16 flex items-center">
           <div className="flex-1">
             <h1 className="text-5xl tracking-tighter font-bold mb-4">
-              Hi, I'm Cameron 👋
+              Hi, I&apos;m Cameron 👋
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400">
               Software Engineer and Visionary. I love bringing innovative ideas
@@ -57,10 +53,12 @@ const PersonalWebsite = () => {
             </p>
           </div>
           <div className="flex-shrink-0 ml-8">
-            <img
+            <Image
               src={portrait.src}
               alt="Cameron Portrait"
-              className="w-32 h-32 rounded-full border-1 border-gray-300 dark:border-gray-600"
+              width={128}
+              height={128}
+              className="rounded-full border-1 border-gray-300 dark:border-gray-600"
             />
           </div>
         </section>
@@ -84,10 +82,12 @@ const PersonalWebsite = () => {
               <CardContent className="pt-6">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
-                    <img
+                    <Image
                       src={parkworth.src}
                       alt="Parkworth Wealth Management Logo"
-                      className="w-16 h-16 rounded-full border border-gray-300 dark:border-gray-600"
+                      width={64}
+                      height={64}
+                      className="rounded-full border border-gray-300 dark:border-gray-600"
                     />
                   </div>
                   <div className="flex-1 ml-4">
@@ -111,10 +111,12 @@ const PersonalWebsite = () => {
               <CardContent className="pt-6">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
-                    <img
+                    <Image
                       src={burlington.src}
                       alt="Burlington Stores Logo"
-                      className="w-16 h-16 rounded-full border border-gray-300 dark:border-gray-600"
+                      width={64}
+                      height={64}
+                      className="rounded-full border border-gray-300 dark:border-gray-600"
                     />
                   </div>
                   <div className="flex-1 ml-4">
@@ -144,19 +146,21 @@ const PersonalWebsite = () => {
             <CardContent className="pt-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     src={sbseal.src}
                     alt="SB Seal Logo"
-                    className="w-16 h-16 rounded-full border border-gray-300 dark:border-gray-600"
+                    width={80}
+                    height={48}
+                    className="object-cover border border-gray-300 dark:border-gray-600"
                   />
                 </div>
                 <div className="flex-1 ml-4">
                   <div className="flex justify-between items-start">
                     <div>
                       <h3 className="font-bold">UC Santa Barbara 🌊</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">Bachelor's Degree in Computer Science</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Bachelor&apos;s Degree in Computer Science</p>
                     </div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Expected Jun 2026</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Expected 2026</p>
                   </div>
                 </div>
               </div>
