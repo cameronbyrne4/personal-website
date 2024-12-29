@@ -25,7 +25,7 @@ const PersonalWebsite = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 relative">
+    <div className={`min-h-screen bg-white ${isDarkMode ? 'bg-black' : 'dark:bg-gray-900'} text-gray-900 dark:text-gray-100 relative`}>
       {/* Dark Mode Toggle */}
       <Button
         variant="outline"
@@ -278,7 +278,7 @@ const PersonalWebsite = () => {
         </section>
 
         {/* Fixed Gradient Overlay as Footer */}
-        <div className="fixed inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+        <div className={`fixed inset-x-0 bottom-0 h-32 bg-gradient-to-t ${isDarkMode ? 'from-black to-transparent' : 'from-white to-transparent'} pointer-events-none`}></div>
       </main>
     </div>
   );
