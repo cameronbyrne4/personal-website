@@ -40,14 +40,14 @@ const PersonalWebsite = () => {
         )}
       </Button>
 
-      <main className="container mx-auto px-4 py-16 max-w-3xl relative">
+      <main className="container mx-auto px-4 py-16 max-w-2xl relative">
         {/* Hero Section */}
-        <section className="mb-16 flex items-center">
+        <section className="mb-8 flex items-center">
           <div className="flex-1">
-            <h1 className="text-5xl tracking-tighter font-bold mb-4">
+            <h1 className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-1">
               Hi, I&apos;m Cameron 👋
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
+            <p className="text-xl text-black dark:text-white">
               Software Engineer and Visionary. I love bringing innovative ideas
               to life with the power of code.
             </p>
@@ -64,8 +64,8 @@ const PersonalWebsite = () => {
         </section>
 
         {/* About Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">About</h2>
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-0">About</h2>
           <p className="text-gray-600 dark:text-gray-400">
             Third-year Computer Science student at University of California,
             Santa Barbara. Eager to provide elegant solutions to real-world
@@ -75,8 +75,8 @@ const PersonalWebsite = () => {
         </section>
 
         {/* Work Experience Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Work Experience</h2>
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
           <div className="space-y-6">
             <Card className="transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group">
               <CardContent className="pt-6">
@@ -140,8 +140,8 @@ const PersonalWebsite = () => {
         </section>
 
         {/* Education Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Education</h2>
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">Education</h2>
           <Card className="transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group">
             <CardContent className="pt-6">
               <div className="flex items-start">
@@ -169,8 +169,8 @@ const PersonalWebsite = () => {
         </section>
 
         {/* Skills Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Skills</h2>
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">Skills</h2>
           <div className="flex flex-wrap gap-2">
             {[
               "Python",
@@ -206,8 +206,8 @@ const PersonalWebsite = () => {
         </section>
 
         {/* Projects Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Projects</h2>
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project) => (
               <Card
@@ -253,8 +253,8 @@ const PersonalWebsite = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Contact</h2>
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">Contact</h2>
           <div className="flex gap-4">
             <a
               href="mailto:cameron.byrne@outlook.com"
