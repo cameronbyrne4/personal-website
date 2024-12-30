@@ -44,7 +44,7 @@ const PersonalWebsite = () => {
         {/* Hero Section */}
         <section className="mb-8 flex items-center">
           <div className="flex-1">
-            <h1 className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-1">
+            <h1 className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/none mb-1">
               Hi, I&apos;m Cameron 👋
             </h1>
             <p className="text-xl text-black dark:text-white">
