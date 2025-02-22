@@ -4,7 +4,7 @@ const projects = [
     title: "NVIDIA Investment Advisor",
     description: "A full-stack application that automates stock investment insights using Reddit sentiment analysis and real-time data visualization.",
     technologies: ["Python", "React", "FastAPI", "Open AI API", "TailwindCSS", "Reddit API"],
-    externalLink: "https://example.com/first-project",
+    externalLink: "https://drive.google.com/file/d/14z2P6uDExbSUYHqLf-Jva2rg_Tg6VvVU/view?usp=sharing",
     githubLink: "https://github.com/cameronbyrne4/nvidia-tracker",
   },
   {
@@ -25,12 +25,28 @@ const projects = [
   },
   {
     id: 4,
-    title: "Placeholder project",
-    description: "Brief description for the fourth project.",
-    technologies: ["Vue", "JavaScript", "Firebase"],
-    externalLink: "https://example.com/fourth-project",
-    githubLink: "https://github.com/username/fourth-project",
+    title: "Texting Twin",
+    description: "A Discord chat bot mimicking my (or anyone else's) personality.",
+    technologies: ["Python", "discord.py", "MongoDB", "OpenAI"],
+    externalLink: "https://youtu.be/9dGA6i9_-Bw",
+    githubLink: "https://github.com/cameronbyrne4/discord-mimic-bot",
   },
+  //{
+  //   id: 4,
+  //   title: "Placeholder project",
+  //   description: "Brief description for the fourth project.",
+  //   technologies: ["Vue", "JavaScript", "Firebase"],
+  //   externalLink: "https://example.com/fourth-project",
+  //   githubLink: "https://github.com/username/fourth-project",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Placeholder project",
+  //   description: "Brief description for the project.",
+  //   technologies: ["Vue", "JavaScript", "Firebase"],
+  //   externalLink: "https://example.com/my-project",
+  //   githubLink: "https://github.com/username/my-project",
+  // },
 ];
 
 export default projects;
